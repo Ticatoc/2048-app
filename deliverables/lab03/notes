@@ -1,0 +1,7 @@
+On parle des outils CI/CD
+Il y en a plein: Github actions, gitlab, azuredevops, jenkins, ...
+Pas que le pipeline, aide aussi pour l'organisation, garder des artifacts, le secret, ...
+
+Creation de slide par markdown (un outils qu'aime bien le prof)
+
+git reset???
