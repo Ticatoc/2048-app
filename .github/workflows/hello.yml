@@ -9,6 +9,8 @@ on:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Say Hello
         run: echo "Hello pipelines' world!"

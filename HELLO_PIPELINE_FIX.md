@@ -26,6 +26,15 @@ on:
   push:
     branches: [ lab3 ]  # ✅ Correct branch name
   workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read  # ✅ Explicit permissions for security
+    steps:
+      - name: Say Hello
+        run: echo "Hello pipelines' world!"
 ```
 
 ## Solution
@@ -50,6 +59,11 @@ The hello pipeline is designed to:
 - Trigger on pushes to the lab3 branch
 - Can also be manually triggered via workflow_dispatch
 - Runs on ubuntu-latest
+- Uses explicit permissions (contents: read) for security
 - Executes a simple echo command: `echo "Hello pipelines' world!"`
 
 This is the first step of Lab 3, as described in `labs/lab03.md`.
+
+## Security Improvements
+
+The fixed workflow includes explicit GITHUB_TOKEN permissions (`contents: read`) to follow security best practices and limit access to only what's needed.
