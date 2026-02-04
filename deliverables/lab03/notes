@@ -10,3 +10,4 @@ git reset???
 
 /bin/act push <--- Technique pour tester en local
 Ce qu'il a rajouté dans sa pipeline c'est: Chackout repo -> Setup Node.js -> Setup pnpm -> run notre fichier
+Potentiellement faire unchmod sur script
