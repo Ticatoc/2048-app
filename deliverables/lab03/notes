@@ -5,3 +5,8 @@ Pas que le pipeline, aide aussi pour l'organisation, garder des artifacts, le se
 Creation de slide par markdown (un outils qu'aime bien le prof)
 
 git reset???
+
+.gitconfig
+
+/bin/act push <--- Technique pour tester en local
+Ce qu'il a rajouté dans sa pipeline c'est: Chackout repo -> Setup Node.js -> Setup pnpm -> run notre fichier
