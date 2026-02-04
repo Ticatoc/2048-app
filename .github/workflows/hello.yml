@@ -1,0 +1,14 @@
+name: Hello World
+
+# Manual trigger
+on:
+  push:
+    branches: [ lab3 ]
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello pipelines' world!"
