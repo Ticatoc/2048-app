@@ -12,4 +12,6 @@ git reset???
 Ce qu'il a rajouté dans sa pipeline c'est: Chackout repo -> Setup Node.js -> Setup pnpm -> run notre fichier
 Potentiellement faire unchmod sur script
 
-Attention de prendre des versions à jour
+Attention de prendre des versions à jour des actions
+Systeme d'instructions pour copilot: Autres façon de rajouter un bout de prompt de façàn recurrente
+Peut être parametrer pour s'activer que dans certaines conditions
