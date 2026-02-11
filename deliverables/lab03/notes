@@ -19,7 +19,8 @@ Peut être parametrer pour s'activer que dans certaines conditions
 codespace cela donne un VScode en ligne dans un conteneurs???
 Très utile quand problème d'ordi
 
-Elles ont fait un job install, lint, typecheck, test, build
+Elles ont fait un job install, lint, typecheck, test, build 
 parallelisme: Trois job du millieu possible, le préciser
+Les test peut être les faire apres le build
 
 Veut mieux specifier version pnpm dans package json
