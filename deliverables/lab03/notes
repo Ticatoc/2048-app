@@ -24,3 +24,6 @@ parallelisme: Trois job du millieu possible, le préciser
 Les test peut être les faire apres le build
 
 Veut mieux specifier version pnpm dans package json
+
+cron
+artefact il faut les sauvegarder via un action
