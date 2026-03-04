@@ -31,6 +31,7 @@ jobs:
           echo "Repository: ${{ github.repository }}"
 
   typecheck:
+    if: ${{ github.event_name == 'pull_request' }}
     name: Type checking
     runs-on: ubuntu-latest
     steps:
@@ -53,6 +54,7 @@ jobs:
         run: pnpm typecheck
 
   lint:
+    if: ${{ github.event_name == 'pull_request' }}
     name: Static analysis
     runs-on: ubuntu-latest
     steps:
@@ -101,6 +103,7 @@ jobs:
         run: pnpm test
 
       - name: Upload build artifact
+        if: ${{ github.event_name == 'push' }}
         uses: actions/upload-artifact@v6
         with:
           name: 2048-app-build
