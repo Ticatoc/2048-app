@@ -4,3 +4,7 @@ Dans les package manager souvent, possibilité d'installer toutes les dépendanc
 
 Possibilité de push des  commit spécifique.
 -> Intérrogation: Si on a 2 commit non push, que le 2eme "dépends" du premier et que l'on push le plus jeune? Que ce passe t il?
+
+Git push --force-with-lease
+-> Pour resoudre les problème de rebase (Git recconnait pas les mêmme commit)
+
