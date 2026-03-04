@@ -1,1 +1,2 @@
-Lorsqu'on utilise un cache il faut préciser le chemin du fichier qui sera utilisé pour la vérification hash.
+Lorsqu'on utilise un cache il faut parfois (selon la plateforme et ce que l'on veut faire) préciser le chemin du fichier qui sera utilisé comme clé de cache.
+
