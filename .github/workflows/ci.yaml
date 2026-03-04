@@ -1,5 +1,8 @@
 name: CI
 
+env:
+  NODE_VERSION: 22
+
 on:
   push:
     branches:
@@ -31,7 +34,7 @@ jobs:
           echo "Repository: ${{ github.repository }}"
 
   typecheck:
-    if: ${{ github.event_name == 'pull_request' }}
+    if: github.event_name == 'pull_request'
     name: Type checking
     runs-on: ubuntu-latest
     steps:
@@ -44,9 +47,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install
@@ -55,7 +57,7 @@ jobs:
         run: pnpm typecheck
 
   lint:
-    if: ${{ github.event_name == 'pull_request' }}
+    if: github.event_name == 'pull_request'
     name: Static analysis
     runs-on: ubuntu-latest
     steps:
@@ -68,9 +70,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install
@@ -92,9 +93,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install
@@ -111,3 +111,4 @@ jobs:
         with:
           name: 2048-app-build
           path: .output/
+          retention-days: ${{ github.ref_name == 'main' && 7 || 1}}
