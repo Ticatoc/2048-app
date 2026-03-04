@@ -8,3 +8,4 @@ Possibilité de push des  commit spécifique.
 Git push --force-with-lease
 -> Pour resoudre les problème de rebase (Git recconnait pas les mêmme commit)
 
+En fait les remote c'est pas que pour les fork tu peux  aussi faire des remote sur des dépots vide et les remplir tiens.
