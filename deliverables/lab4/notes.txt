@@ -1,0 +1,1 @@
+Lorsqu'on utilise un cache il faut préciser le chemin du fichier qui sera utilisé pour la vérification hash.
