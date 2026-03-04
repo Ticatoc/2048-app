@@ -1,2 +1,6 @@
 Lorsqu'on utilise un cache il faut parfois (selon la plateforme et ce que l'on veut faire) préciser le chemin du fichier qui sera utilisé comme clé de cache.
 
+Dans les package manager souvent, possibilité d'installer toutes les dépendances du projet ou de  spécifier lesquelles.
+
+Possibilité de push des  commit spécifique.
+-> Intérrogation: Si on a 2 commit non push, que le 2eme "dépends" du premier et que l'on push le plus jeune? Que ce passe t il?
