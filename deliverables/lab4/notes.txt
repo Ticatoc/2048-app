@@ -16,3 +16,6 @@ Possibilité d'avoir en upstream 2 dépots radicalement différents:
 
 Squad: Exemple du 'futur' de la programmation avec une équipe d'IA sous notre direction
 
+Sur VSCode: INUTILE d'avoir toute les extensions téléchargée activée en même temps.
+ - Activate in workspace
+ - Profils VSCode
