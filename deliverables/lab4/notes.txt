@@ -9,3 +9,10 @@ Git push --force-with-lease
 -> Pour resoudre les problème de rebase (Git recconnait pas les mêmme commit)
 
 En fait les remote c'est pas que pour les fork tu peux  aussi faire des remote sur des dépots vide et les remplir tiens.
+
+Possibilité d'avoir en upstream 2 dépots radicalement différents:
+ - Utilité: Transvaser un projet
+ - Difficultés: Haut potentiel de faire n'importe quoi, facile de se perdre.
+
+Squad: Exemple du 'futur' de la programmation avec une équipe d'IA sous notre direction
+
