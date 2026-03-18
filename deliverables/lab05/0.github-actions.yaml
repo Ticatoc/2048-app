@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - lab05
+      - lab5
   workflow_dispatch:
 
 env:
