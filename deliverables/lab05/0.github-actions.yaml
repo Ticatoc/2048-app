@@ -45,7 +45,7 @@ jobs:
     needs: build
     environment:
       name: production
-      url: https://your-vercel-domain.vercel.app
+      url: https://2048-app.vercel.app
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
