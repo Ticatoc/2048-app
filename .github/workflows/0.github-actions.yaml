@@ -37,8 +37,9 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: 2048-app-build
-          path: .output/
+          path: .
           retention-days: 1
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,7 +55,7 @@ jobs:
         uses: actions/download-artifact@v6
         with:
           name: 2048-app-build
-          path: .output/
+          path: .
 
       - name: Deploy to Vercel
         run: npx vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }}
