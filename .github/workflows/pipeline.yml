@@ -1,0 +1,30 @@
+name: Run Pipeline
+
+on:
+  push:
+    branches: [ main, lab3 ]
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Make script executable
+        run: chmod +x pipeline/script.sh
+
+      - name: Run pipeline script
+        run: ./pipeline/script.sh
