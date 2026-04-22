@@ -1,0 +1,14 @@
+Notes lab05
+
+Principe du blue-green deployment:
+    Pour visualiser les modifications avant la mise en production.
+    Sur Vercel: Des preview qui peuvent être mis en production via la CLI ou la pipeline.
+
+Stratégies de Branches dans GIT:
+    Comment on gère les branches?
+    Différentes façons de faire.
+    Le plus général: pull request et branches features pour le dev.
+    Branches de release.
+    Mais plein d'autres systèmes existent avec leurs avantages et inconvénients.
+
+On voit Vercel mais d'autres alternatives.
