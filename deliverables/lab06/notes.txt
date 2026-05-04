@@ -1,0 +1,12 @@
+AI tools + worktrees combo = vraiment solid pour branch juggling et exploration
+
+portails web... honnêtement le mal. CLI >>> clicking around in some UI
+(plus rapide et tu sais ce qui se passe, te force à maitriser)
+
+regions thing: west europe > france pour infrastructure
+(france n'a pas toutes les ressources, ça sucks mais c'est vrai)
+
+ce bug azure SWA par contre - deployment issues dans certains spots
+faut être careful où tu déploies ou ça break
+
+agentic workflows pas mal, enleve les tahces repetitves
